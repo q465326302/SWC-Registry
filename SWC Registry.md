@@ -2,7 +2,7 @@
 ##<center> 智能合约弱点分类与测试案例</center>
 以下表格概述了SWC注册表。每一行包含一个SWC标识符（ID），弱点标题，CWE父级和相关代码示例列表。ID和测试用例列中的链接指向相应的SWC定义。关系列中的链接指向CWE基本类型或类别。
 
-| ID | Title | Relationships | Test cases |
+| ID | 标题 | 关系 | 测试用例 |
 |---|---|---|---|
 |SWC-136|未加密的私有数据上链|[CWE-767: 通过公共方法访问关键私有变量](https://cwe.mitre.org/data/definitions/767.html)| [odd_even.sol]( https://swcregistry.io/docs/SWC-136#odd-evensol) <br> [odd_even_fixed.sol](https://swcregistry.io/docs/SWC-136#odd-even-fixedsol)|
 |SWC-135|没有效果的代码|[CWE-1164: 无关代码](https://cwe.mitre.org/data/definitions/1164.html)|[deposit_box.sol](https://swcregistry.io/docs/SWC-135#deposit-boxsol) <br>[deposit_box_fixed.sol](https://swcregistry.io/docs/SWC-135#deposit-box-fixedsol)<br> [wallet.sol](https://swcregistry.io/docs/SWC-135#walletsol)<br> [wallet_fixed.sol](https://swcregistry.io/docs/SWC-135#wallet-fixedsol)|
@@ -39,4 +39,5 @@
 |SWC-104|未检查的函数调用返回值|[CWE-252: 未检查的返回值](https://cwe.mitre.org/data/definitions/252.html)|[unchecked_return_value.sol]|
 |SWC-103|浮动指示|[CWE-664: 对资源的生命周期进行不当控制](https://cwe.mitre.org/data/definitions/664.html)|[floating_pragma.sol] <br> [floating_pragma_fixed.sol] <br> [no_pragma.sol] <br> [semver_floating_pragma.sol] <br> [semver_floating_pragma_fixed.sol]|
 |SWC-102|过时的编译器版本|[CWE-937: 使用已知漏洞的组件](http://cwe.mitre.org/data/definitions/937.html)|[version_0_4_13.sol]|
-|SWC-101|整数溢出和下溢|[CWE-682: 不正确的计算](https://cwe.mitre.org/data/definitions/682.html)|[tokensalechallenge.sol] <br> [integer_overflow_mapping_sym_1.sol] <br> [integer_overflow_mapping_sym_1_fixed.sol] <br> [integer_overflow_minimal.sol] <br> 
+|SWC-101|整数溢出和下溢|[CWE-682: 不正确的计算](https://cwe.mitre.org/data/definitions/682.html)|[tokensalechallenge.sol] <br> [integer_overflow_mapping_sym_1.sol] <br> [integer_overflow_mapping_sym_1_fixed.sol] <br> [integer_overflow_minimal.sol] <br> [integer_overflow_minimal_fixed.sol] <br> [integer_overflow_mul.sol] <br> [integer_overflow_mul_fixed.sol] <br> [integer_overflow_multitx_multifunc_feasible.sol] <br> [integer_overflow_multitx_multifunc_feasible_fixed.sol] <br> [integer_overflow_multitx_onefunc_feasible.sol] <br> [integer_overflow_multitx_onefunc_feasible_fixed.sol] <br> [integer_overflow_multitx_onefunc_infeasible.sol] <br> [overflow_simple_add.sol] <br> [overflow_simple_add_fixed.sol] <br> [BECToken.sol]|
+|SWC-100|函数的默认可见性|[CWE-710: 编码规范不当](https://cwe.mitre.org/data/definitions/710.html)|[visibility_not_set.sol] <br> [visibility_not_set_fixed.sol]|
