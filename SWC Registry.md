@@ -5,7 +5,7 @@
 | ID | Title | Relationships | Test cases |
 |---|---|---|---|
 |SWC-136|未加密的私有数据上链|[CWE-767: 通过公共方法访问关键私有变量](https://cwe.mitre.org/data/definitions/767.html)| [odd_even.sol]( https://swcregistry.io/docs/SWC-136#odd-evensol) <br> [odd_even_fixed.sol](https://swcregistry.io/docs/SWC-136#odd-even-fixedsol)|
-|SWC-135|没有效果的代码|[CWE-1164: 无关代码](https://cwe.mitre.org/data/definitions/1164.html)|[deposit_box.sol](https://swcregistry.io/docs/SWC-135#deposit-boxsol) <br>[deposit_box_fixed.sol](https://swcregistry.io/docs/SWC-135#deposit-box-fixedsol) [wallet.sol](https://swcregistry.io/docs/SWC-135#walletsol)<br> [wallet_fixed.sol](https://swcregistry.io/docs/SWC-135#wallet-fixedsol)|
+|SWC-135|没有效果的代码|[CWE-1164: 无关代码](https://cwe.mitre.org/data/definitions/1164.html)|[deposit_box.sol](https://swcregistry.io/docs/SWC-135#deposit-boxsol) <br>[deposit_box_fixed.sol](https://swcregistry.io/docs/SWC-135#deposit-box-fixedsol)<br> [wallet.sol](https://swcregistry.io/docs/SWC-135#walletsol)<br> [wallet_fixed.sol](https://swcregistry.io/docs/SWC-135#wallet-fixedsol)|
 |SWC-134|使用硬编码的gas数量进行消息调用|[CWE-655: 不正确的初始化](https://cwe.mitre.org/data/definitions/767.html)|[hardcoded_gas_limits.sol](https://swcregistry.io/docs/SWC-135#deposit-boxsol)|
 |SWC-133|多个变长参数的哈希碰撞|[CWE-294: 通过捕获重放绕过身份验证](https://cwe.mitre.org/data/definitions/294.html)|[access_control.sol](https://swcregistry.io/docs/SWC-133#access-controlsol)<br>[access_control_fixed_1.sol](https://swcregistry.io/docs/SWC-133#access-control-fixed-1sol)<br>[access_control_fixed_2.sol](https://swcregistry.io/docs/SWC-133#access-control-fixed-2sol)|
 |SWC-132|意外的以太余额|[CWE-667：不正确的锁定](https://cwe.mitre.org/data/definitions/667.html)|[Lockdrop.sol](https://swcregistry.io/docs/SWC-132#lockdropsol)|
@@ -14,3 +14,7 @@
 |SWC-129|印刷错误|[CWE-480: 使用错误的运算符](https://cwe.mitre.org/data/definitions/480.html)|[typo_one_command.sol](https://swcregistry.io/docs/SWC-129#typo-one-commandsol)<br>[typo_safe_math.sol](https://swcregistry.io/docs/SWC-129#typo-safe-mathsol)<br>[typo_simple.sol](https://swcregistry.io/docs/SWC-129#typo-simplesol)|
 |SWC-128|使用区块燃气限制进行拒绝服务攻击（DoS）|[CWE-400: 未受控制的资源消耗](https://cwe.mitre.org/data/definitions/400.html)|[dos_address.sol](https://swcregistry.io/docs/SWC-128#dos-addresssol)<br>[dos_number.sol](https://swcregistry.io/docs/SWC-128#dos-numbersol)<br>[dos_simple.sol](https://swcregistry.io/docs/SWC-128#dos-simplesol)|
 |SWC-127|使用函数类型变量进行任意跳转|[CWE-695：使用低级功能](https://cwe.mitre.org/data/definitions/695.html)|[FunctionTypes.sol](https://swcregistry.io/docs/SWC-127#functiontypessol)|
+|SWC-126|不足的燃气欺诈|[CWE-691：不足的控制流管理](https://cwe.mitre.org/data/definitions/691.html)|[relayer.sol] <br> [relayer_fixed.sol]|
+|SWC-125|错误的继承顺序|[CWE-696：错误的行为顺序](https://cwe.mitre.org/data/definitions/696.html)|[MDTCrowdsale.sol]|
+|SWC-124|写入任意存储位置|[CWE-123: 写入任意存储位置](https://cwe.mitre.org/data/definitions/123.html)|[arbitrary_location_write_simple.sol] <br> [arbitrary_location_write_simple_fixed.sol]| <br> [mapping_write.sol]|
+|SWC-123|违反要求|[CWE-573: 调用方不正确地遵循规范](https://cwe.mitre.org/data/definitions/573.html)|[requirement_simple.sol] <br> [requirement_simple_fixed.sol]|
