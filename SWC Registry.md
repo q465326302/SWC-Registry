@@ -18,3 +18,9 @@
 |SWC-125|错误的继承顺序|[CWE-696：错误的行为顺序](https://cwe.mitre.org/data/definitions/696.html)|[MDTCrowdsale.sol]|
 |SWC-124|写入任意存储位置|[CWE-123: 写入任意存储位置](https://cwe.mitre.org/data/definitions/123.html)|[arbitrary_location_write_simple.sol] <br> [arbitrary_location_write_simple_fixed.sol]| <br> [mapping_write.sol]|
 |SWC-123|违反要求|[CWE-573: 调用方不正确地遵循规范](https://cwe.mitre.org/data/definitions/573.html)|[requirement_simple.sol] <br> [requirement_simple_fixed.sol]|
+|SWC-122|缺乏适当的签名验证|[CWE-345: 数据真实性验证不足](https://cwe.mitre.org/data/definitions/345.html)|
+|SWC-121|缺乏防止签名重放攻击的保护措施|[CWE-347: 不正确验证加密签名](https://cwe.mitre.org/data/definitions/347.html)|
+|SWC-120|链属性的弱随机性来源|[CWE-330: 使用不足够随机的值](https://cwe.mitre.org/data/definitions/330.html)|[guess_the_random_number.sol] <br> [guess_the_random_number_fixed.sol] <br> [old_blockhash.sol] <br> [old_blockhash_fixed.sol] <br> [random_number_generator.sol]|
+|SWC-119|阴影状态变量|[CWE-710: 缺乏对编码规范的正确遵循](http://cwe.mitre.org/data/definitions/710.html)|[ShadowingInFunctions.sol] <br> [TokenSale.sol] <br> [TokenSale_fixed.sol]|
+|SWC-118|错误的构造函数名称|[CWE-665: 不正确的初始化](http://cwe.mitre.org/data/definitions/665.html)|[incorrect_constructor_name1.sol] <br> [incorrect_constructor_name1_fixed.sol] <br> [incorrect_constructor_name2.sol] <br> [incorrect_constructor_name2_fixed.sol]|
+|SWC-117|签名可伸缩性|[CWE-347: 不正确的加密签名验证](https://cwe.mitre.org/data/definitions/347.html)|[incorrect_constructor_name1.sol] <br> [incorrect_constructor_name1_fixed.sol]
