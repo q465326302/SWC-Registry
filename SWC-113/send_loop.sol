@@ -18,8 +18,8 @@ mapping (address => uint) public refunds;
 
     // bad
     function refundAll() public {
-        for(uint x; x < refundAddresses.length; x++) { // arbitrary length iteration based on how many addresses participated
-            require(refundAddresses[x].send(refunds[refundAddresses[x]])); // doubly bad, now a single failure on send will hold up all funds
+        for(uint x; x < refundAddresses.length; x++) { // 基于参与地址数量的任意长度迭代
+            require(refundAddresses[x].send(refunds[refundAddresses[x]])); // 更糟糕的是，现在一次发送失败将会阻塞所有资金
         }
     }
 
