@@ -10,7 +10,7 @@
 |[SWC-131](SWC-131/SWC-131.md)|存在未使用的变量|[CWE-1164: 无关代码](https://cwe.mitre.org/data/definitions/1164.html)|
 |[SWC-130](SWC-130/SWC-130.md)|从右到左覆盖控制字符（U+202E）|[CWE-451：用户界面（UI）对关键信息的误传](http://cwe.mitre.org/data/definitions/451.html)|
 |[SWC-129](SWC-129/SWC-129.md)|印刷错误|[CWE-480: 使用错误的运算符](https://cwe.mitre.org/data/definitions/480.html)|
-|[SWC-128](SWC-128/SWC-128.md)|使用区块燃气限制进行拒绝服务攻击（DoS）|[CWE-400: 未受控制的资源消耗](https://cwe.mitre.org/data/definitions/400.html)|
+|[SWC-128](SWC-128/SWC-128.md)|利用区块的燃气限制来发动 DoS 攻击。|[CWE-400: 未受控制的资源消耗](https://cwe.mitre.org/data/definitions/400.html)|
 |[SWC-127](SWC-127/SWC-127.md)|使用函数类型变量进行任意跳转|[CWE-695：使用低级功能](https://cwe.mitre.org/data/definitions/695.html)|
 |[SWC-126](SWC-126/SWC-126.md)|不足的燃气欺诈|[CWE-691：不足的控制流管理](https://cwe.mitre.org/data/definitions/691.html)|
 |[SWC-125](SWC-125/SWC-125.md)|错误的继承顺序|[CWE-696：错误的行为顺序](https://cwe.mitre.org/data/definitions/696.html)|

@@ -26,9 +26,9 @@ library SafeMath {
   * @整数相除，截断商，当被除数为零时返回。
   */
   function div(uint256 a, uint256 b) internal pure returns (uint256) {
-    require(b > 0); // Solidity only automatically asserts when dividing by 0
+    require(b > 0); // 在 Solidity 中，只有在除以 0 时才会自动进行断言。
     uint256 c = a / b;
-    // assert(a == b * c + a % b); // There is no case in which this doesn't hold
+    // assert(a == b * c + a % b); // 没有任何情况下这个不成立
 
     return c;
   }

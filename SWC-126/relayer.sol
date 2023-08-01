@@ -1,7 +1,7 @@
 /*
- * @source: https://consensys.github.io/smart-contract-best-practices/known_attacks/#insufficient-gas-griefing
- * @author: ConsenSys Diligence
- * Modified by Kaden Zipfel
+ * @来源: https://consensys.github.io/smart-contract-best-practices/known_attacks/#insufficient-gas-griefing
+ * @作者: ConsenSys Diligence
+ * 由Kaden Zipfel修改
  */
 
 pragma solidity ^0.5.0;
@@ -28,9 +28,9 @@ contract Relayer {
     }
 }
 
-// Contract called by Relayer
+// 中继器调用的合约
 contract Target {
     function execute(bytes memory _data) public {
-        // Execute contract code
+        // 执行合约代码
     }
 }

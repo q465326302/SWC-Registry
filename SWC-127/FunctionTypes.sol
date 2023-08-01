@@ -1,6 +1,6 @@
 /*
- * @source: https://gist.github.com/wadeAlexC/7a18de852693b3f890560ab6a211a2b8
- * @author: Alexander Wade
+ * @来源: https://gist.github.com/wadeAlexC/7a18de852693b3f890560ab6a211a2b8
+ * @作者: Alexander Wade
  */
 
 pragma solidity ^0.4.25;
