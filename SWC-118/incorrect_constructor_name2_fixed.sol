@@ -1,7 +1,7 @@
 /*
- * @source: https://github.com/trailofbits/not-so-smart-contracts/blob/master/wrong_constructor_name/incorrect_constructor.sol
- * @author: Ben Perez
- * Modified by Gerhard Wagner
+ * @来源: https://github.com/trailofbits/not-so-smart-contracts/blob/master/wrong_constructor_name/incorrect_constructor.sol
+ * @作者: Ben Perez
+ * 由Gerhard Wagner修改
  */
 
 pragma solidity ^0.4.24;

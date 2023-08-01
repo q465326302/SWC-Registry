@@ -1,5 +1,5 @@
 /*
- * @author: Kaden Zipfel
+ * @作者: Kaden Zipfel
  */
 
 pragma solidity ^0.5.0;

@@ -1,7 +1,7 @@
 /*
- * @source: https://consensys.github.io/smart-contract-best-practices/recommendations/#avoid-using-txorigin
- * @author: Consensys Diligence
- * Modified by Gerhard Wagner
+ * @来源: https://consensys.github.io/smart-contract-best-practices/recommendations/#avoid-using-txorigin
+ * @作者: Consensys Diligence
+ * 由Gerhard Wagner修改
  */
 
 pragma solidity 0.4.25;

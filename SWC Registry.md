@@ -21,11 +21,11 @@
 |[SWC-120](SWC-120/SWC-120.md)|链属性的弱随机性来源|[CWE-330: 使用不充分随机的值](https://cwe.mitre.org/data/definitions/330.html)|
 |[SWC-119](SWC-119/SWC-119.md)|状态变量的隐藏|[CWE-710: 不正确遵守编码规范](http://cwe.mitre.org/data/definitions/710.html)|
 |[SWC-118](SWC-118/SWC-118.md)|错误的构造函数名称|[CWE-665: 不正确的初始化](http://cwe.mitre.org/data/definitions/665.html)|
-|[SWC-117](SWC-117/SWC-117.md)|签名可伸缩性|[CWE-347: 不正确的加密签名验证](https://cwe.mitre.org/data/definitions/347.html)|
-|[SWC-116](SWC-116/SWC-116.md)|将区块值作为时间的代理|[CWE-829: 从不可信控制领域包含功能](https://cwe.mitre.org/data/definitions/829.html)|
+|[SWC-117](SWC-117/SWC-117.md)|签名可变性|[CWE-347: 不正确的加密签名验证](https://cwe.mitre.org/data/definitions/347.html)|
+|[SWC-116](SWC-116/SWC-116.md)|使用区块值作为时间的代理|[CWE-829: 在不受信任的控制领域中包含功能](https://cwe.mitre.org/data/definitions/829.html)|
 |[SWC-115](SWC-115/SWC-115.md)|通过tx.origin进行授权|[CWE-477: 使用已过时的函数](https://cwe.mitre.org/data/definitions/477.html)|
-|[SWC-114](SWC-114/SWC-114.md)|交易订单依赖性|[CWE-362: 并发执行时使用共享资源时缺乏适当的同步（'竞态条件'）](https://cwe.mitre.org/data/definitions/362.html)|
-|[SWC-113](SWC-113/SWC-113.md)|拒绝服务与失败的呼叫|[CWE-703: 异常条件的不当检查或处理](https://cwe.mitre.org/data/definitions/703.html)|[send_loop.sol]|
+|[SWC-114](SWC-114/SWC-114.md)|交易顺序依赖|[CWE-362: 并发执行使用不正确同步的共享资源（'竞态条件'）](https://cwe.mitre.org/data/definitions/362.html)|
+|[SWC-113](SWC-113/SWC-113.md)|失败调用导致的DoS攻击|[CWE-703: 异常条件的不当检查或处理](https://cwe.mitre.org/data/definitions/703.html)|[send_loop.sol]|
 |[SWC-112](SWC-112/SWC-112.md)|将委托调用给不受信任的被调用方|[CWE-829: 包含来自不受信任的控制领域的功能](https://cwe.mitre.org/data/definitions/829.html)|
 |[SWC-111](SWC-111/SWC-111.md)|使用已弃用的Solidity函数|[CWE-477：使用过时的函数](https://cwe.mitre.org/data/definitions/477.html)|
 |[SWC-110](SWC-110/SWC-110.md)|断言违规|[CWE-670: 始终不正确的控制流实现](https://cwe.mitre.org/data/definitions/670.html)|

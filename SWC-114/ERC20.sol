@@ -1,6 +1,6 @@
 pragma solidity ^0.4.24;
 
-/** Taken from the OpenZeppelin github
+/** 从OpenZeppelin的github获取
  * @title SafeMath
  * @使用安全检查的开发数学操作，出错时进行回滚。
  */
@@ -54,7 +54,7 @@ library SafeMath {
   }
 
   /**
-  * @dev函数用于两个数相除并返回余数（无符号整数模除），当除以零时返回错误。
+  * @函数用于两个数相除并返回余数（无符号整数模除），当除以零时返回错误。
   */
   function mod(uint256 a, uint256 b) internal pure returns (uint256) {
     require(b != 0);

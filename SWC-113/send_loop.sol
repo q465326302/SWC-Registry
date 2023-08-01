@@ -1,7 +1,7 @@
 /*
- * @source: https://consensys.github.io/smart-contract-best-practices/known_attacks/#dos-with-unexpected-revert
- * @author: ConsenSys Diligence
- * Modified by Bernhard Mueller
+ * @来源: https://consensys.github.io/smart-contract-best-practices/known_attacks/#dos-with-unexpected-revert
+ * @作者: ConsenSys Diligence
+ * 由Bernhard Mueller修改
  */
 
 pragma solidity 0.4.24;
@@ -18,7 +18,7 @@ mapping (address => uint) public refunds;
 
     // bad
     function refundAll() public {
-        for(uint x; x < refundAddresses.length; x++) { // 基于参与地址数量的任意长度迭代
+        for(uint x; x < refundAddresses.length; x++) { // arbitrary length iteration based on how many addresses participated
             require(refundAddresses[x].send(refunds[refundAddresses[x]])); // 更糟糕的是，现在一次发送失败将会阻塞所有资金
         }
     }

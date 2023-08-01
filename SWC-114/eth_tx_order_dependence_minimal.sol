@@ -1,6 +1,6 @@
 /*
- * @source: https://github.com/ConsenSys/evm-analyzer-benchmark-suite
- * @author: Suhabe Bugrara
+ * @来源: https://github.com/ConsenSys/evm-analyzer-benchmark-suite
+ * @作者: Suhabe Bugrara
  */
 
 pragma solidity ^0.4.16;
