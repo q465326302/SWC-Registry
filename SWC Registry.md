@@ -18,8 +18,8 @@
 |[SWC-123](SWC-123/SWC-123.md)|要求违规|[CWE-573: 调用方未正确遵循规范](https://cwe.mitre.org/data/definitions/573.html)|
 |[SWC-122](SWC-122/SWC-122.md)|缺乏适当的签名验证|[CWE-345: 数据真实性验证不足](https://cwe.mitre.org/data/definitions/345.html)|
 |[SWC-121](SWC-121/SWC-121.md)|缺乏防止签名重放攻击的保护措施|[CWE-347: 不正确验证加密签名](https://cwe.mitre.org/data/definitions/347.html)|
-|[SWC-120](SWC-120/SWC-120.md)|链属性的弱随机性来源|[CWE-330: 使用不足够随机的值](https://cwe.mitre.org/data/definitions/330.html)|
-|[SWC-119](SWC-119/SWC-119.md)|阴影状态变量|[CWE-710: 缺乏对编码规范的正确遵循](http://cwe.mitre.org/data/definitions/710.html)|
+|[SWC-120](SWC-120/SWC-120.md)|链属性的弱随机性来源|[CWE-330: 使用不充分随机的值](https://cwe.mitre.org/data/definitions/330.html)|
+|[SWC-119](SWC-119/SWC-119.md)|状态变量的隐藏|[CWE-710: 不正确遵守编码规范](http://cwe.mitre.org/data/definitions/710.html)|
 |[SWC-118](SWC-118/SWC-118.md)|错误的构造函数名称|[CWE-665: 不正确的初始化](http://cwe.mitre.org/data/definitions/665.html)|
 |[SWC-117](SWC-117/SWC-117.md)|签名可伸缩性|[CWE-347: 不正确的加密签名验证](https://cwe.mitre.org/data/definitions/347.html)|
 |[SWC-116](SWC-116/SWC-116.md)|将区块值作为时间的代理|[CWE-829: 从不可信控制领域包含功能](https://cwe.mitre.org/data/definitions/829.html)|

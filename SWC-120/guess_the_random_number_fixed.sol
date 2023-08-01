@@ -1,6 +1,6 @@
 /*
- * @source: https://capturetheether.com/challenges/lotteries/guess-the-random-number/
- * @author: Steve Marx
+ * @来源: https://capturetheether.com/challenges/lotteries/guess-the-random-number/
+ * @作者: Steve Marx
  */
 
 pragma solidity ^0.4.25;
