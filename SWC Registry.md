@@ -4,7 +4,7 @@
 
 | ID | 标题 | 关系 |
 |---|---|---|
-|[SWC-136](../SWC-136/SWC-136.md)|未加密的私有数据上链|[CWE-767: 通过公共方法访问关键私有变量](https://cwe.mitre.org/data/definitions/767.html)|
+|[SWC-136](../SWC-Registry/SWC-136/SWC-136.md)|未加密的私有数据上链|[CWE-767: 通过公共方法访问关键私有变量](https://cwe.mitre.org/data/definitions/767.html)|
 |[SWC-135](../SWC-135/SWC-135.md)|没有效果的代码|[CWE-1164: 无关代码](https://cwe.mitre.org/data/definitions/1164.html)|
 |[SWC-134](../SWC-134/SWC-134.md)|使用硬编码的gas数量进行消息调用|[CWE-655: 不正确的初始化](https://cwe.mitre.org/data/definitions/767.html)|
 |[SWC-133](../SWC-133/SWC-133.md)|多个变长参数的哈希碰撞|[CWE-294: 通过捕获重放绕过身份验证](https://cwe.mitre.org/data/definitions/294.html)|
