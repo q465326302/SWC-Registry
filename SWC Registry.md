@@ -14,8 +14,8 @@
 |[SWC-127](SWC-127/SWC-127.md)|使用函数类型变量进行任意跳转|[CWE-695：使用低级功能](https://cwe.mitre.org/data/definitions/695.html)|
 |[SWC-126](SWC-126/SWC-126.md)|不足的燃气欺诈|[CWE-691：不足的控制流管理](https://cwe.mitre.org/data/definitions/691.html)|
 |[SWC-125](SWC-125/SWC-125.md)|错误的继承顺序|[CWE-696：错误的行为顺序](https://cwe.mitre.org/data/definitions/696.html)|
-|[SWC-124](SWC-124/SWC-124.md)|写入任意存储位置|[CWE-123: 写入任意存储位置](https://cwe.mitre.org/data/definitions/123.html)|
-|[SWC-123](SWC-123/SWC-123.md)|违反要求|[CWE-573: 调用方不正确地遵循规范](https://cwe.mitre.org/data/definitions/573.html)|
+|[SWC-124](SWC-124/SWC-124.md)|写入任意存储位置|[CWE-123: 写入何处条件漏洞](https://cwe.mitre.org/data/definitions/123.html)|
+|[SWC-123](SWC-123/SWC-123.md)|要求违规|[CWE-573: 调用方未正确遵循规范](https://cwe.mitre.org/data/definitions/573.html)|
 |[SWC-122](SWC-122/SWC-122.md)|缺乏适当的签名验证|[CWE-345: 数据真实性验证不足](https://cwe.mitre.org/data/definitions/345.html)|
 |[SWC-121](SWC-121/SWC-121.md)|缺乏防止签名重放攻击的保护措施|[CWE-347: 不正确验证加密签名](https://cwe.mitre.org/data/definitions/347.html)|
 |[SWC-120](SWC-120/SWC-120.md)|链属性的弱随机性来源|[CWE-330: 使用不足够随机的值](https://cwe.mitre.org/data/definitions/330.html)|

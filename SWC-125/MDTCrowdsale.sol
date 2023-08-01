@@ -1,6 +1,6 @@
 /*
- * @source: https://github.com/Arachnid/uscc/blob/master/submissions-2017/philipdaian/MDTCrowdsale.sol
- * @author: Philip Daian
+ * @来源: https://github.com/Arachnid/uscc/blob/master/submissions-2017/philipdaian/MDTCrowdsale.sol
+ * @作者: Philip Daian
  */
 
 pragma solidity ^0.4.25;
