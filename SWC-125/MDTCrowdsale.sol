@@ -165,8 +165,8 @@ contract ERC20 is IERC20 {
     /**
      * @将代币从一个地址转移到另一个地址。
      * 请注意，虽然此函数会发出一个Approval事件，但根据规范并不需要这样做，其他符合规范的实现可能不会发出该事件。
-     * @param from地址 您希望从中发送代币的地址
-     * @param to地址 您希望转移到的地址
+     * @param from地址 你希望从中发送代币的地址
+     * @param to地址 你希望转移到的地址
      * @param value uint256 要转移的代币数量
      */
     function transferFrom(address from, address to, uint256 value) public returns (bool) {
