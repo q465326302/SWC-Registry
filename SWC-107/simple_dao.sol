@@ -1,7 +1,7 @@
 /*
- * @source: http://blockchain.unica.it/projects/ethereum-survey/attacks.html#simpledao
- * @author: Atzei N., Bartoletti M., Cimoli T
- * Modified by Josselin Feist
+ * @来源: http://blockchain.unica.it/projects/ethereum-survey/attacks.html#simpledao
+ * @作者: Atzei N., Bartoletti M., Cimoli T
+ * 由Josselin Feist修改
  */
 pragma solidity 0.4.24;
 

@@ -1,6 +1,6 @@
 /*
- * @source: https://capturetheether.com/challenges/math/token-sale/
- * @author: Steve Marx
+ * @来源: https://capturetheether.com/challenges/math/token-sale/
+ * @作者: Steve Marx
  */
 
 pragma solidity ^0.4.21;

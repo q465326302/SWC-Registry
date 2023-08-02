@@ -360,7 +360,7 @@ contract WalletLibrary is WalletEvents {
     delete m_pendingIndex;
   }
 
-  // FIELDS
+  // 字段
   address constant _walletLibrary = 0xcafecafecafecafecafecafecafecafecafecafe;
 
   // 在运行之前必须确认相同操作的所有者数量。
