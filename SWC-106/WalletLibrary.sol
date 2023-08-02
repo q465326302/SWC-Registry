@@ -330,7 +330,7 @@ contract WalletLibrary is WalletEvents {
 
   // 检查今天的每日限额中是否至少还剩下 `_value`。如果有，则减去该金额并返回 true。否则，只返回 false。
   function underLimit(uint _value) internal onlyowner returns (bool) {
-    // reset the spend limit if we're on a different day to last time.
+    // 如果我们与上次不是同一天，就重新设置花费限额。
     if (today() > m_lastDay) {
       m_spentToday = 0;
       m_lastDay = today();

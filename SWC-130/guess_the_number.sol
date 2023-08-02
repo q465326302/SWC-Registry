@@ -1,7 +1,6 @@
-
 /*
- * @source: https://youtu.be/P_Mtd5Fc_3E
- * @author: Shahar Zini
+ * @来源: https://youtu.be/P_Mtd5Fc_3E
+ * @作者: Shahar Zini
  */
 pragma solidity ^0.5.0;
 

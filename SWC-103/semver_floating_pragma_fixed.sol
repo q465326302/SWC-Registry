@@ -1,5 +1,5 @@
 pragma solidity 0.4.25;
-// or
+// 或者
 pragma solidity =0.4.25;
 
 contract SemVerFloatingPragmaFixed {
