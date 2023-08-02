@@ -1,5 +1,5 @@
 /** 
- * @source: https://github.com/hicommonwealth/edgeware-lockdrop/blob/93ecb524c9c88d25bab36278541f190fa9e910c2/contracts/Lockdrop.sol
+ * @来源: https://github.com/hicommonwealth/edgeware-lockdrop/blob/93ecb524c9c88d25bab36278541f190fa9e910c2/contracts/Lockdrop.sol
  */
 
 pragma solidity ^0.5.0;
@@ -15,9 +15,9 @@ contract Lock {
     }
 
     /**
-     * @dev        Withdraw function once timestamp has passed unlock time
+     * @dev        当时间戳超过解锁时间后，撤回函数。
      */
-    function () external payable { // payable so solidity doesn't add unnecessary logic
+    function () external payable { // 可支付的，以确保 Solidity 不会添加不必要的逻辑。
         assembly {
             switch gt(timestamp, sload(0x01))
             case 0 { revert(0, 0) }
@@ -49,10 +49,10 @@ contract Lockdrop {
     }
 
     /**
-     * @dev        Locks up the value sent to contract in a new Lock
-     * @param      term         The length of the lock up
-     * @param      edgewareAddr The bytes representation of the target edgeware key
-     * @param      isValidator  Indicates if sender wishes to be a validator
+     * @dev        在一个新的锁中锁定发送给合约的价值。
+     * @param      term         锁定期的长度
+     * @param      edgewareAddr 目标 edgeware 密钥的字节表示形式
+     * @param      isValidator  表示发送方是否希望成为验证者。
      */
     function lock(Term term, bytes calldata edgewareAddr, bool isValidator)
         external
@@ -71,10 +71,10 @@ contract Lockdrop {
     }
 
     /**
-     * @dev        Signals a contract's (or address's) balance decided after lock period
-     * @param      contractAddr  The contract address from which to signal the balance of
-     * @param      nonce         The transaction nonce of the creator of the contract
-     * @param      edgewareAddr   The bytes representation of the target edgeware key
+     * @dev        在锁定期之后，表示合约（或地址）的余额决定。
+     * @param      contractAddr  用于表示余额的合约地址。
+     * @param      nonce         合约创建者的交易 nonce。
+     * @param      edgewareAddr   目标 edgeware 密钥的字节表示形式。
      */
     function signal(address contractAddr, uint32 nonce, bytes calldata edgewareAddr)
         external
@@ -94,7 +94,7 @@ contract Lockdrop {
     }
 
     /**
-     * @dev        Ensures the lockdrop has started
+     * @dev        确保锁仓已经开始。
      */
     modifier didStart() {
         require(now >= LOCK_START_TIME);
@@ -102,7 +102,7 @@ contract Lockdrop {
     }
 
     /**
-     * @dev        Ensures the lockdrop has not ended
+     * @dev        确保锁仓尚未结束。
      */
     modifier didNotEnd() {
         require(now <= LOCK_END_TIME);
@@ -110,9 +110,9 @@ contract Lockdrop {
     }
 
     /**
-     * @dev        Rebuilds the contract address from a normal address and transaction nonce
-     * @param      _origin  The non-contract address derived from a user's public key
-     * @param      _nonce   The transaction nonce from which to generate a contract address
+     * @dev        Rebuilds  从普通地址和交易 nonce 重新构建合约地址。
+     * @param      _origin  从用户的公钥派生的非合约地址。
+     * @param      _nonce   用于生成合约地址的交易 nonce。
      */
     function addressFrom(address _origin, uint32 _nonce) public pure returns (address) {
         if(_nonce == 0x00)     return address(uint160(uint256(keccak256(abi.encodePacked(byte(0xd6), byte(0x94), _origin, byte(0x80))))));
@@ -124,10 +124,10 @@ contract Lockdrop {
     }
 
     /**
-     * @dev        Ensures the target address was created by a parent at some nonce
-     * @param      target  The target contract address (or trivially the parent)
-     * @param      parent  The creator of the alleged contract address
-     * @param      nonce   The creator's tx nonce at the time of the contract creation
+     * @dev        Ensures 目标地址是由某个父地址在某个 nonce 下创建的。
+     * @param      target  目标合约地址（或简单地说，父级地址）。
+     * @param      parent  合约地址的创建者。
+     * @param      nonce   在合约创建时的创建者的交易 nonce。
      */
     modifier didCreate(address target, address parent, uint32 nonce) {
         // 可以轻松地让发送者“创建”自己。

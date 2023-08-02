@@ -1,6 +1,6 @@
 /*
- * @source: https://gist.github.com/manojpramesh/336882804402bee8d6b99bea453caadd#file-odd-even-sol
- * @author: https://github.com/manojpramesh
+ * @来源: https://gist.github.com/manojpramesh/336882804402bee8d6b99bea453caadd#file-odd-even-sol
+ * @作者: https://github.com/manojpramesh
  * 由Kaden Zipfel修改
  */
 

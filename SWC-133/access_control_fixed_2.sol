@@ -1,6 +1,6 @@
 /*
- * @author: Steve Marx
- * Modified by Kaden Zipfel
+ * @作者: Steve Marx
+ * 由Kaden Zipfel修改
  */
 
 pragma solidity ^0.5.0;

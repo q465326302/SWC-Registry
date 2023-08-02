@@ -1,6 +1,6 @@
 /*
- * @author: Steve Marx
- * Modified by Kaden Zipfel
+ * @作者: Steve Marx
+ * 由Kaden Zipfel修改
  */
 
 pragma solidity ^0.5.0;
@@ -11,7 +11,7 @@ contract AccessControl {
     using ECDSA for bytes32;
     mapping(address => bool) isAdmin;
     mapping(address => bool) isRegularUser;
-    // Add a single user, either an admin or regular user.
+    // 添加一个单一用户，可以是管理员或普通用户。
     function addUser(
         address user,
         bool admin,

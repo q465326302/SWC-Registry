@@ -1,5 +1,5 @@
 /*
- * @author: Steve Marx
+ * @作者: Steve Marx
  */
 
 pragma solidity ^0.5.0;

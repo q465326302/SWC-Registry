@@ -1,5 +1,5 @@
 /*
- * @author: Bernhard Mueller (ConsenSys / MythX)
+ * @作者: Bernhard Mueller (ConsenSys / MythX)
  */
 
 pragma solidity 0.6.4;

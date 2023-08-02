@@ -1,6 +1,6 @@
 /*
- * @source: https://github.com/yahgwai/rps
- * @author: Chris Buckland
+ * @来源: https://github.com/yahgwai/rps
+ * @作者: Chris Buckland
  * 由Kaden Zipfel修改
  */
 

@@ -1,4 +1,3 @@
-
 以下表格概述了SWC注册表。每一行包含一个SWC标识符（ID），弱点标题，CWE父级和相关代码示例列表。ID和测试用例列中的链接指向相应的SWC定义。关系列中的链接指向CWE基本类型或类别。
 
 | ID | 标题 | 关系 |
@@ -25,7 +24,7 @@
 |[SWC-117](SWC-117/SWC-117.md)|签名可变性|[CWE-347: 不正确的加密签名验证](https://cwe.mitre.org/data/definitions/347.html)|
 |[SWC-116](SWC-116/SWC-116.md)|将区块值作为时间的代理|[CWE-829: 在不受信任的控制领域中包含功能](https://cwe.mitre.org/data/definitions/829.html)|
 |[SWC-115](SWC-115/SWC-115.md)|通过tx.origin进行授权|[CWE-477: 使用已过时的函数](https://cwe.mitre.org/data/definitions/477.html)|
-|[SWC-114](SWC-114/SWC-114.md)|交易订单依赖性|[CWE-362: 并发执行使用不正确同步的共享资源（'竞态条件'）](https://cwe.mitre.org/data/definitions/362.html)|
+|[SWC-114](SWC-114/SWC-114.md)|交易订单依赖性|[CWE-362: 并发执行使用不正确同步的共享资源（'竞争条件'）](https://cwe.mitre.org/data/definitions/362.html)|
 |[SWC-113](SWC-113/SWC-113.md)|失败调用导致的DoS攻击|[CWE-703: 异常条件的不正确检查或处理](https://cwe.mitre.org/data/definitions/703.html)|
 |[SWC-112](SWC-112/SWC-112.md)|将委托调用给不受信任的被调用方|[CWE-829: 在不受信任的控制领域中包含功能](https://cwe.mitre.org/data/definitions/829.html)|
 |[SWC-111](SWC-111/SWC-111.md)|使用已弃用的Solidity函数|[CWE-477：使用过时的函数](https://cwe.mitre.org/data/definitions/477.html)|
@@ -36,8 +35,7 @@
 |[SWC-106](SWC-106/SWC-106.md)|未受保护的自毁指令|[CWE-284: 不正确的访问控制](https://cwe.mitre.org/data/definitions/284.html)|
 |[SWC-105](SWC-105/SWC-105.md)|未受保护的以太提取|[CWE-284: 不正确的访问控制](https://cwe.mitre.org/data/definitions/284.html)|
 |[SWC-104](SWC-104/SWC-104.md)|未检查的函数调用返回值|[CWE-252: 未检查的返回值](https://cwe.mitre.org/data/definitions/252.html)|
-|[SWC-103](SWC-103/SWC-103.md)|浮动的 Pragma
-|[CWE-664: 对资源的生命周期进行不当控制](https://cwe.mitre.org/data/definitions/664.html)|
+|[SWC-103](SWC-103/SWC-103.md)|浮动的 Pragma|[CWE-664: 对资源的生命周期进行不当控制](https://cwe.mitre.org/data/definitions/664.html)|
 |[SWC-102](SWC-102/SWC-102.md)|过时的编译器版本|[CWE-937: 使用已知漏洞的组件](http://cwe.mitre.org/data/definitions/937.html)|
 |[SWC-101](SWC-101/SWC-101.md)|整数溢出和下溢|[CWE-682: 不正确的计算](https://cwe.mitre.org/data/definitions/682.html)|
 |[SWC-100](SWC-100/SWC-100.md)|函数的默认可见性|[CWE-710: 缺乏对编码规范的正确遵循](https://cwe.mitre.org/data/definitions/710.html)|

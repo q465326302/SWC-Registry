@@ -1,5 +1,5 @@
 /*
- * @author: Kaden Zipfel
+ * @作者: Kaden Zipfel
  */
 
 pragma solidity ^0.5.0;
@@ -20,7 +20,7 @@ contract Wallet {
         uint previousBalance = balance[msg.sender];
         balance[msg.sender] = previousBalance - amount;
 
-        // Attempt to send amount from the contract to msg.sender
+        // 尝试将金额从合约发送给消息发送者
         (bool success, ) = msg.sender.call.value(amount)("");
         require(success, 'transfer failed');
     }
