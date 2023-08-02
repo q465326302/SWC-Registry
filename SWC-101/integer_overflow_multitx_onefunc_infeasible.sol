@@ -1,6 +1,6 @@
 /*
- * @source: https://github.com/ConsenSys/evm-analyzer-benchmark-suite
- * @author: Suhabe Bugrara
+ * @来源: https://github.com/ConsenSys/evm-analyzer-benchmark-suite
+ * @作者: Suhabe Bugrara
  */
 //多事务，单函数
 //溢出不可行因为算术指令不可达

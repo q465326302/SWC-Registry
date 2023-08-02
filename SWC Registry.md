@@ -33,10 +33,11 @@
 |[SWC-109](SWC-109/SWC-109.md)|未初始化的存储指针|[CWE-824: 访问未初始化的指针](https://cwe.mitre.org/data/definitions/824.html)|
 |[SWC-108](SWC-108/SWC-108.md)|状态变量默认可见性|[CWE-710: 缺乏对编码规范的正确遵循](https://cwe.mitre.org/data/definitions/710.html)|
 |[SWC-107](SWC-107/SWC-107.md)|可重入性|[CWE-841: 行为工作流程的不正确执行](https://cwe.mitre.org/data/definitions/841.html)|
-|[SWC-106](SWC-106/SWC-106.md)|未受保护的SELFDESTRUCT指令|[CWE-284: 不当的访问控制](https://cwe.mitre.org/data/definitions/284.html)|
-|[SWC-105](SWC-105/SWC-105.md)|未受保护的以太提取|[CWE-284: 不当的访问控制](https://cwe.mitre.org/data/definitions/284.html)|
+|[SWC-106](SWC-106/SWC-106.md)|未受保护的自毁指令|[CWE-284: 不正确的访问控制](https://cwe.mitre.org/data/definitions/284.html)|
+|[SWC-105](SWC-105/SWC-105.md)|未受保护的以太提取|[CWE-284: 不正确的访问控制](https://cwe.mitre.org/data/definitions/284.html)|
 |[SWC-104](SWC-104/SWC-104.md)|未检查的函数调用返回值|[CWE-252: 未检查的返回值](https://cwe.mitre.org/data/definitions/252.html)|
-|[SWC-103](SWC-103/SWC-103.md)|浮动指示|[CWE-664: 对资源的生命周期进行不当控制](https://cwe.mitre.org/data/definitions/664.html)|
+|[SWC-103](SWC-103/SWC-103.md)|浮动的 Pragma
+|[CWE-664: 对资源的生命周期进行不当控制](https://cwe.mitre.org/data/definitions/664.html)|
 |[SWC-102](SWC-102/SWC-102.md)|过时的编译器版本|[CWE-937: 使用已知漏洞的组件](http://cwe.mitre.org/data/definitions/937.html)|
 |[SWC-101](SWC-101/SWC-101.md)|整数溢出和下溢|[CWE-682: 不正确的计算](https://cwe.mitre.org/data/definitions/682.html)|
-|[SWC-100](SWC-100/SWC-100.md)|函数的默认可见性|[CWE-710: 编码规范不当](https://cwe.mitre.org/data/definitions/710.html)|
+|[SWC-100](SWC-100/SWC-100.md)|函数的默认可见性|[CWE-710: 缺乏对编码规范的正确遵循](https://cwe.mitre.org/data/definitions/710.html)|

@@ -1,7 +1,7 @@
 pragma solidity ^0.4.16;
 
 /**
- * @title SafeMath
+ * @标题 SafeMath
  * @@dev 在错误发生时会抛出异常的安全检查的数学操作
  */
 library SafeMath {
@@ -31,7 +31,7 @@ library SafeMath {
 }
 
 /**
- * @title ERC20Basic
+ * @标题 ERC20Basic
  * @ERC20接口的简化版本
  * @dev see https://github.com/ethereum/EIPs/issues/179
  */
@@ -43,7 +43,7 @@ contract ERC20Basic {
 }
 
 /**
- * @title Basic token
+ * @标题 Basic token
  * @标准令牌（StandardToken）的基本版本，没有授权功能。
  */
 contract BasicToken is ERC20Basic {
@@ -78,7 +78,7 @@ contract BasicToken is ERC20Basic {
 }
 
 /**
- * @title ERC20 interface
+ * @标题 ERC20 interface
  * @dev see https://github.com/ethereum/EIPs/issues/20
  */
 contract ERC20 is ERC20Basic {
@@ -90,7 +90,7 @@ contract ERC20 is ERC20Basic {
 
 
 /**
- * @title Standard ERC20 token
+ * @标题 Standard ERC20 token
  *
  * @dev 基本标准令牌的实现。
  * @dev https://github.com/ethereum/EIPs/issues/20
@@ -144,7 +144,7 @@ contract StandardToken is ERC20, BasicToken {
 }
 
 /**
- * @title Ownable
+ * @标题 Ownable
  * @Ownable合约具有一个所有者地址，并提供基本的授权控制函数，这简化了“用户权限”的实现。
  */
 contract Ownable {
@@ -184,7 +184,7 @@ contract Ownable {
 }
 
 /**
- * @title Pausable
+ * @标题 Pausable
  * @基于合约的开发，允许子合约实现紧急停止机制。
  */
 contract Pausable is Ownable {
@@ -228,7 +228,7 @@ contract Pausable is Ownable {
 }
 
 /**
- * @title Pausable token
+ * @标题 Pausable token
  *
  * @带有可暂停转账功能的标准令牌（StandardToken）进行了修改。
  **/
@@ -263,7 +263,7 @@ contract PausableToken is StandardToken, Pausable {
 }
 
 /**
- * @title Bec Token
+ * @标题 Bec Token
  *
  * @基于基本标准令牌的Bec Token的dev实现。
  */

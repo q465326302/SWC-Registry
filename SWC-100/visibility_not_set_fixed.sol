@@ -1,7 +1,7 @@
 /*
- * @source: https://github.com/sigp/solidity-security-blog#visibility
- * @author: SigmaPrime
- * Modified by Gerhard Wagner
+ * @来源: https://github.com/sigp/solidity-security-blog#visibility
+ * @作者: SigmaPrime
+ * 由Gerhard Wagner修改
  */
 
 pragma solidity ^0.4.24;
