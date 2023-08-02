@@ -1,5 +1,5 @@
 /*
- * @source: https://github.com/thec00n/smart-contract-honeypots/blob/master/CryptoRoulette.sol
+ * @来源: https://github.com/thec00n/smart-contract-honeypots/blob/master/CryptoRoulette.sol
  */
 pragma solidity ^0.4.19;
 
@@ -41,7 +41,7 @@ contract CryptoRoulette {
         gamesPlayed.push(game);
 
         if (number == secretNumber) {
-            // win!
+            // 赢得游戏!
             msg.sender.transfer(this.balance);
         }
 

@@ -31,8 +31,8 @@
 |[SWC-111](SWC-111/SWC-111.md)|使用已弃用的Solidity函数|[CWE-477：使用过时的函数](https://cwe.mitre.org/data/definitions/477.html)|
 |[SWC-110](SWC-110/SWC-110.md)|断言违规|[CWE-670: 始终不正确的控制流实现](https://cwe.mitre.org/data/definitions/670.html)|
 |[SWC-109](SWC-109/SWC-109.md)|未初始化的存储指针|[CWE-824: 访问未初始化的指针](https://cwe.mitre.org/data/definitions/824.html)|
-|[SWC-108](SWC-108/SWC-108.md)|状态变量默认可见性|[CWE-710: 编码标准不当的遵循](https://cwe.mitre.org/data/definitions/710.html)|
-|[SWC-107](SWC-107/SWC-107.md)|重入性|[CWE-841: 不正确的行为工作流强制执行](https://cwe.mitre.org/data/definitions/841.html)|
+|[SWC-108](SWC-108/SWC-108.md)|状态变量默认可见性|[CWE-710: 缺乏对编码规范的正确遵循](https://cwe.mitre.org/data/definitions/710.html)|
+|[SWC-107](SWC-107/SWC-107.md)|可重入性|[CWE-841: 行为工作流程的不正确执行](https://cwe.mitre.org/data/definitions/841.html)|
 |[SWC-106](SWC-106/SWC-106.md)|未受保护的SELFDESTRUCT指令|[CWE-284: 不当的访问控制](https://cwe.mitre.org/data/definitions/284.html)|
 |[SWC-105](SWC-105/SWC-105.md)|未受保护的以太提取|[CWE-284: 不当的访问控制](https://cwe.mitre.org/data/definitions/284.html)|
 |[SWC-104](SWC-104/SWC-104.md)|未检查的函数调用返回值|[CWE-252: 未检查的返回值](https://cwe.mitre.org/data/definitions/252.html)|
