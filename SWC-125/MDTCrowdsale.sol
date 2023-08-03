@@ -7,12 +7,12 @@ pragma solidity ^0.4.25;
 
 //import "https://github.com/OpenZeppelin/openzeppelin-solidity/contracts/math/SafeMath.sol";
 /**
- * @title SafeMath
+ * @标题 SafeMath
  * @使用安全检查的开发数学运算，在错误时会回滚。
  */
 library SafeMath {
     /**
-    * @开发人员将两个数字相乘，如果溢出则返回反转。
+    * @将两个数字相乘，如果溢出则返回反转。
     */
     function mul(uint256 a, uint256 b) internal pure returns (uint256) {
         // 气体优化：这比要求'a'不为零更便宜，但如果'b'也被测试，这个好处就会丧失。
@@ -40,7 +40,7 @@ library SafeMath {
     }
 
     /**
-    * @开发者减去两个数字，如果被减数大于减数，则返回溢出。
+    * @减去两个数字，如果被减数大于减数，则返回溢出。
     */
     function sub(uint256 a, uint256 b) internal pure returns (uint256) {
         require(b <= a);
@@ -50,7 +50,7 @@ library SafeMath {
     }
 
     /**
-    * @开发者添加了两个数字，在溢出时进行还原。
+    * @添加了两个数字，在溢出时进行还原。
     */
     function add(uint256 a, uint256 b) internal pure returns (uint256) {
         uint256 c = a + b;
@@ -127,7 +127,7 @@ contract ERC20 is IERC20 {
     }
 
     /**
-     * @翻译：用于检查所有者允许给支出者的代币数量的函数。
+     * @用于检查所有者允许给支出者的代币数量的函数。
      * @param owner 地址 拥有资金的地址。
      * @param spender 地址 将花费资金的地址。
      * @return 一个 uint256，指定仍然可用于支出者的代币数量。
@@ -262,8 +262,8 @@ contract ERC20 is IERC20 {
 }
 
 /**
- * @title Roles
- * @dev 用于管理分配给角色的地址的库。
+ * @标题 Roles
+ * @ 用于管理分配给角色的地址的库。
  */
 library Roles {
     struct Role {
@@ -271,7 +271,7 @@ library Roles {
     }
 
     /**
-     * @开发者将一个账户授予此角色的访问权限。
+     * @将一个账户授予此角色的访问权限。
      */
     function add(Role storage role, address account) internal {
         require(account != address(0));
@@ -291,8 +291,8 @@ library Roles {
     }
 
     /**
-     * @检查开发者是否拥有此角色
-     * @return bool
+     * @检查是否拥有此角色
+     * @返回 bool
      */
     function has(Role storage role, address account) internal view returns (bool) {
         require(account != address(0));
@@ -341,12 +341,12 @@ contract MinterRole {
 }
 
 /**
- * @title ERC20Mintable
- * @dev ERC20铸币逻辑
+ * @标题 ERC20Mintable
+ * @ ERC20铸币逻辑
  */
 contract ERC20Mintable is ERC20, MinterRole {
     /**
-     * @翻译：开发功能以铸造代币
+     * @dev 创建代币的函数
      * @param to 将接收铸造代币的地址。
      * @param value 要铸造的代币数量。
      * @return 一个布尔值，指示操作是否成功。
@@ -357,7 +357,7 @@ contract ERC20Mintable is ERC20, MinterRole {
     }
 }
 /**
- * @title Crowdsale
+ * @标题 Crowdsale
  * @dev Crowdsale是一个用于管理代币众筹的基础合约。
  * 众筹活动有一个开始和结束区块，在这期间，投资者可以购买代币，
  * 众筹活动将根据以太币兑换代币的比率分配给他们代币。
@@ -435,7 +435,7 @@ contract Crowdsale {
         forwardFunds();
     }
 
-    // 将以太币发送到资金收集钱包
+    // 将以太发送到资金收集钱包
     // 重写以创建自定义的资金转发机制
     function forwardFunds() internal {
         wallet.transfer(msg.value);
@@ -456,7 +456,7 @@ contract Crowdsale {
 }
 
 /**
- * @title CappedCrowdsale
+ * @标题 CappedCrowdsale
  * @dev 众筹的扩展，募集资金上限设定
  */
  contract CappedCrowdsale is Crowdsale {
@@ -484,7 +484,7 @@ contract Crowdsale {
 }
 
 /**
- * @title WhitelistedCrowdsale
+ * @标题 WhitelistedCrowdsale
  * @dev 带有投资者白名单的众筹合约扩展，在开始区块之前可以购买
  */
 contract WhitelistedCrowdsale is Crowdsale {
