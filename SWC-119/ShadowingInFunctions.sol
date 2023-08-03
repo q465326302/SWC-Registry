@@ -5,16 +5,16 @@ contract ShadowingInFunctions {
     uint x = 3;
 
     function test1() constant returns (uint n) {
-        return n; // Will return 0
+        return n; // 将返回 0
     }
 
     function test2() constant returns (uint n) {
         n = 1;
-        return n; // Will return 1
+        return n; // 将返回 1
     }
 
     function test3() constant returns (uint x) {
         uint n = 4;
-        return n+x; // Will return 4
+        return n+x; // 将返回 4
     }
 }

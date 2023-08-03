@@ -2,12 +2,12 @@ pragma solidity ^0.4.24;
 
 /** 从OpenZeppelin的github获取
  * @title SafeMath
- * @使用安全检查的开发数学操作，出错时进行回滚。
+ * @使用安全检查的数学操作，出错时进行回滚。
  */
 library SafeMath {
 
   /**
-  * @开发者编写了一个函数，用于计算两个数字的乘积，当结果溢出时会进行反转。
+  * @计算两个数字的乘积，当结果溢出时会进行反转。
   */
   function mul(uint256 a, uint256 b) internal pure returns (uint256) {
     // 气体优化：这比要求 'a' 不为零要便宜，但如果还要测试 'b'，则会失去这个好处。
@@ -34,7 +34,7 @@ library SafeMath {
   }
 
   /**
-  * @开发者将两个数字相减，如果被减数大于减数，则返回溢出。
+  * @将两个数字相减，如果被减数大于减数，则返回溢出。
   */
   function sub(uint256 a, uint256 b) internal pure returns (uint256) {
     require(b <= a);
@@ -44,7 +44,7 @@ library SafeMath {
   }
 
   /**
-  * @开发者将两个数字相加，在溢出时进行还原。
+  * @将两个数字相加，在溢出时进行还原。
   */
   function add(uint256 a, uint256 b) internal pure returns (uint256) {
     uint256 c = a + b;

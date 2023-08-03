@@ -360,7 +360,7 @@ contract ERC20Mintable is ERC20, MinterRole {
  * @标题 Crowdsale
  * @dev Crowdsale是一个用于管理代币众筹的基础合约。
  * 众筹活动有一个开始和结束区块，在这期间，投资者可以购买代币，
- * 众筹活动将根据以太币兑换代币的比率分配给他们代币。
+ * 众筹活动将根据以太兑换代币的比率分配给他们代币。
  * 收集到的资金将在到达时转发到一个钱包。
  */
 contract Crowdsale {
@@ -386,7 +386,7 @@ contract Crowdsale {
     * 购买令牌日志事件
     * @param 购买者：支付代币的人
     * @param 受益人：获得代币的人
-    * @param 价值：购买支付的以太币
+    * @param 价值：购买支付的以太
     * @param 数量：购买的代币数量
     */
     event TokenPurchase(address indexed purchaser, address indexed beneficiary, uint256 value, uint256 amount);
