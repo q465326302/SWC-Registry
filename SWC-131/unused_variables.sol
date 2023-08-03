@@ -19,7 +19,7 @@ contract UnusedVariables {
         int z = 10;
 
         if (test > z) {
-            // x is not used
+            // x 没有被使用
             int x = test - z;
 
             return test - z;

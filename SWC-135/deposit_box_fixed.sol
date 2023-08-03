@@ -6,7 +6,7 @@ contract DepositBox {
     // 接受存款
     function deposit(uint amount) public payable {
         require(msg.value == amount, 'incorrect amount');
-        // Should update user balance
+        // 应更新用户余额
         balance[msg.sender] = amount;
     }
 }
