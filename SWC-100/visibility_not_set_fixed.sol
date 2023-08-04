@@ -3,7 +3,6 @@
  * @作者: SigmaPrime
  * 由Gerhard Wagner修改
  */
-
 pragma solidity ^0.4.24;
 
 contract HashForEther {
