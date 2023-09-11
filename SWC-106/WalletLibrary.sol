@@ -199,7 +199,7 @@ contract WalletLibrary is WalletEvents {
   function setDailyLimit(uint _newLimit) onlymanyowners(sha3(msg.data)) external {
     m_dailyLimit = _newLimit;
   }
-  // 重设了今天已经花费的金额。需要很多业主的确认。
+  // 重设了今天已经花费的金额。需要很多所有者的确认。
   function resetSpentToday() onlymanyowners(sha3(msg.data)) external {
     m_spentToday = 0;
   }
@@ -279,7 +279,7 @@ contract WalletLibrary is WalletEvents {
   function confirmAndCheck(bytes32 _operation) internal returns (bool) {
     // 确定当前发送者的索引是什么：
     uint ownerIndex = m_ownerIndex[uint(msg.sender)];
-    // 确保他们是业主
+    // 确保他们是所有者
     if (ownerIndex == 0) return;
 
     var pending = m_pending[_operation];
@@ -306,7 +306,7 @@ contract WalletLibrary is WalletEvents {
       }
       else
       {
-        // 不够：记录下这位特定业主的确认。
+        // 不够：记录下这位特定所有者的确认。
         pending.yetNeeded--;
         pending.ownersDone |= ownerIndexBit;
       }
