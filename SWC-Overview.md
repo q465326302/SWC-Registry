@@ -36,7 +36,7 @@
 |[SWC-112](SWC-112/SWC-112.md)|将委托调用给不受信任的被调用方|[CWE-829: 包含来自不受信任的控制领域的功能](https://cwe.mitre.org/data/definitions/829.html)|
 |[SWC-111](SWC-111/SWC-111.md)|使用已弃用的Solidity函数|[CWE-477：使用过时的函数](https://cwe.mitre.org/data/definitions/477.html)|
 |[SWC-110](SWC-110/SWC-110.md)|断言违规|[CWE-670: 始终不正确的控制流实现](https://cwe.mitre.org/data/definitions/670.html)|
-|[SWC-109](SWC-109/SWC-109.md)|未初始化的存储指针|[CWE-824: 访问未初始化的指针](https://cwe.mitre.org/data/definitions/824.html)|
+|[SWC-109](SWC-109/SWC-109.md)|未初始化的存储指针|[CWE-824: 访问未初始化的存储指针](https://cwe.mitre.org/data/definitions/824.html)|
 |[SWC-108](SWC-108/SWC-108.md)|状态变量的默认可见性|[CWE-710: 缺乏对编码规范的正确遵循](https://cwe.mitre.org/data/definitions/710.html)|
 |[SWC-107](SWC-107/SWC-107.md)|可重入性|[CWE-841: 行为工作流程执行不当](https://cwe.mitre.org/data/definitions/841.html)|
 |[SWC-106](SWC-106/SWC-106.md)|未受保护的自毁指令|[CWE-284: 不正确的访问控制](https://cwe.mitre.org/data/definitions/284.html)|
