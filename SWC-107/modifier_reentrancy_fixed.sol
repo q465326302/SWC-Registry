@@ -13,7 +13,7 @@ contract ModifierEntrancy {
     tokenBalance[msg.sender] += 20;
   }
 
-  //检查合同是否按我们所希望的方式进行响应。
+  //检查合约是否按我们所希望的方式进行响应。
   modifier supportsToken() {
     require(keccak256(abi.encodePacked("Nu Token")) == bank.supportsToken());
     _;

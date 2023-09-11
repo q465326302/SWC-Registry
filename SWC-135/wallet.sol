@@ -13,7 +13,7 @@ contract Wallet {
         balance[msg.sender] = amount;
     }
 
-    // 从合同中提取资金
+    // 从合约中提取资金
     function withdraw(uint amount) public {
         require(amount <= balance[msg.sender], 'amount must be less than balance');
 

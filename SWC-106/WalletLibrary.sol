@@ -204,7 +204,7 @@ contract WalletLibrary is WalletEvents {
     m_spentToday = 0;
   }
 
-  // 除非合同尚未初始化，否则不要抛出异常。
+  // 除非合约尚未初始化，否则不要抛出异常。
   modifier only_uninitialized { if (m_numOwners > 0) throw; _; }
 
   // 构造函数 - 只需将所有者数组传递给多所有权合约和限制传递给每日限额合约。

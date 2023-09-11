@@ -56,7 +56,7 @@ contract Rubixi {
                 if (participants.length == 10) pyramidMultiplier = 200;
                 else if (participants.length == 25) pyramidMultiplier = 150;
 
-                // 收取费用并更新合同余额
+                // 收取费用并更新合约余额
                 balance += (msg.value * (100 - _fee)) / 100;
                 collectedFees += (msg.value * _fee) / 100;
 
@@ -96,7 +96,7 @@ contract Rubixi {
                 collectedFees -= feesToCollect;
         }
 
-        //更改与合同相关的变量的功能
+        //更改与合约相关的变量的功能
         function changeOwner(address _owner) onlyowner {
                 creator = _owner;
         }

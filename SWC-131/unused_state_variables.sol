@@ -4,7 +4,7 @@ pragma experimental ABIEncoderV2;
 import "./base.sol";
 
 contract DerivedA is Base {
-    // 当前合同中没有使用i
+    // 当前合约中没有使用i
     A i = A(1);
 
     int internal j = 500;
