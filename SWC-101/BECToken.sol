@@ -121,7 +121,7 @@ contract StandardToken is ERC20, BasicToken {
 
   /**
    * @批准传递的地址代表msg.sender花费指定数量的代币。
-   * 请注意，使用此方法更改津贴存在一个风险，即某人可能通过不幸的交易顺序同时使用旧津贴和新津贴。解决这个竞争条件的一个可能的解决方案是首先将支出者的津贴减少到0，然后再设置所需的值：
+   * 请注意，使用此方法更改额度存在一个风险，即某人可能通过不幸的交易顺序同时使用旧额度和新额度。解决这个竞争条件的一个可能的解决方案是首先将支出者的额度减少到0，然后再设置所需的值：
    https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
    * @param _spender 将花费资金的地址。
    * @param _value 要花费的代币数量。
@@ -195,7 +195,7 @@ contract Pausable is Ownable {
 
 
   /**
-   * @将 dev 修改器转化为仅在合约暂停时不可调用的函数。
+   * @将 dev 修饰器转化为仅在合约暂停时不可调用的函数。
    */
   modifier whenNotPaused() {
     require(!paused);
@@ -203,7 +203,7 @@ contract Pausable is Ownable {
   }
 
   /**
-   * @将修改器转换为仅在合约暂停时可调用的函数。
+   * @将修饰器转换为仅在合约暂停时可调用的函数。
    */
   modifier whenPaused() {
     require(paused);
@@ -219,7 +219,7 @@ contract Pausable is Ownable {
   }
 
   /**
-   * @被所有者召唤解除暂停的开发者，恢复正常状态。
+   * @被所有者调用解除暂停的开发者，恢复正常状态。
    */
   function unpause() onlyOwner whenPaused public {
     paused = false;

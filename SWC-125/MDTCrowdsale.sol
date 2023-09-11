@@ -148,8 +148,8 @@ contract ERC20 is IERC20 {
 
     /**
      * @批准已通过的地址代表msg.sender花费指定数量的代币。
-     * 请注意，使用此方法更改津贴存在着某人可能通过不幸的交易顺序同时使用旧的和新的津贴的风险。
-    * 缓解此竞争条件的一种可能解决方案是首先将支出者的津贴减少为0，然后再设置所需的值：
+     * 请注意，使用此方法更改额度存在着某人可能通过不幸的交易顺序同时使用旧的和新的额度的风险。
+    * 缓解此竞争条件的一种可能解决方案是首先将支出者的额度减少为0，然后再设置所需的值：
     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
     * @param spender 将花费资金的地址。
     * @param value 要花费的代币数量。
@@ -182,7 +182,7 @@ contract ERC20 is IERC20 {
      * 来自MonolithDAO Token.sol
      * 发出一个Approval事件。
      * @param spender 将花费资金的地址。
-     * @param addedValue 要增加的津贴金额。
+     * @param addedValue 要增加的额度金额。
      */
     function increaseAllowance(address spender, uint256 addedValue) public returns (bool) {
         require(spender != address(0));
