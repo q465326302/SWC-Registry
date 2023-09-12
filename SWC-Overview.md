@@ -22,7 +22,7 @@
 |[SWC-126](SWC-126/SWC-126.md)|不足的 Gas 欺诈|[CWE-691：控制流管理不足](https://cwe.mitre.org/data/definitions/691.html)|
 |[SWC-125](SWC-125/SWC-125.md)|继承顺序不正确|[CWE-696：错误的行为顺序](https://cwe.mitre.org/data/definitions/696.html)|
 |[SWC-124](SWC-124/SWC-124.md)|写入任意存储位置|[CWE-123: 写入何处条件漏洞](https://cwe.mitre.org/data/definitions/123.html)|
-|[SWC-123](SWC-123/SWC-123.md)|违反要求|[CWE-573: 调用者不正确地遵循规范](https://cwe.mitre.org/data/definitions/573.html)|
+|[SWC-123](SWC-123/SWC-123.md)|违反要求|[CWE-573: 调用方未正确遵循规范](https://cwe.mitre.org/data/definitions/573.html)|
 |[SWC-122](SWC-122/SWC-122.md)|缺乏适当的签名验证|[CWE-345: 数据真实性验证不充分](https://cwe.mitre.org/data/definitions/345.html)|
 |[SWC-121](SWC-121/SWC-121.md)|缺少针对签名重放攻击的保护措施|[CWE-347: 加密签名验证不当](https://cwe.mitre.org/data/definitions/347.html)|
 |[SWC-120](SWC-120/SWC-120.md)|链属性的弱随机性来源|[CWE-330: 使用不足够随机的值](https://cwe.mitre.org/data/definitions/330.html)|
