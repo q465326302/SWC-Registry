@@ -21,7 +21,7 @@ contract DosNumber {
         numElements = 0;
     }
 
-    // 气体DOS清除
+    // GasDOS清除
     function clearDOS() public {
 
         // 数字取决于实际的燃气限制。
