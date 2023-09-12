@@ -7,9 +7,9 @@ pragma solidity ^0.4.21;
 contract GasModelFixed{
     uint x = 100;
     function check(){
-        uint a = gasleft();
+        uint a = Gasleft();
         x = x + 1;
-        uint b = gasleft();
+        uint b = Gasleft();
         assert(b < a);
     }
 }

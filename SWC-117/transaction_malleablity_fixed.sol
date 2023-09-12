@@ -15,15 +15,15 @@ contract transaction_malleablity{
         bytes _signature,
         address _to,
         uint256 _value,
-        uint256 _gasPrice,
+        uint256 _GasPrice,
         uint256 _nonce)
       public
     returns (bool)
     {
-      bytes32 txid = getTransferHash(_to, _value, _gasPrice, _nonce);
+      bytes32 txid = getTransferHash(_to, _value, _GasPrice, _nonce);
       require(!signatureUsed[txid]);
 
-      address from = recoverTransferPreSigned(_signature, _to, _value, _gasPrice, _nonce);
+      address from = recoverTransferPreSigned(_signature, _to, _value, _GasPrice, _nonce);
 
       require(balances[from] > _value);
       balances[from] -= _value;
@@ -36,24 +36,24 @@ contract transaction_malleablity{
         bytes _sig,
         address _to,
         uint256 _value,
-        uint256 _gasPrice,
+        uint256 _GasPrice,
         uint256 _nonce)
       public
       view
     returns (address recovered)
     {
-        return ecrecoverFromSig(getSignHash(getTransferHash(_to, _value, _gasPrice, _nonce)), _sig);
+        return ecrecoverFromSig(getSignHash(getTransferHash(_to, _value, _GasPrice, _nonce)), _sig);
     }
 
     function getTransferHash(
         address _to,
         uint256 _value,
-        uint256 _gasPrice,
+        uint256 _GasPrice,
         uint256 _nonce)
       public
       view
     returns (bytes32 txHash) {
-        return keccak256(address(this), bytes4(0x1296830d), _to, _value, _gasPrice, _nonce);
+        return keccak256(address(this), bytes4(0x1296830d), _to, _value, _GasPrice, _nonce);
     }
 
     function getSignHash(bytes32 _hash)

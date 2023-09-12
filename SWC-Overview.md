@@ -11,7 +11,7 @@
 |---|---|---|
 |[SWC-136](SWC-136/SWC-136.md)|未加密的私有数据上链|[CWE-767: 通过公共方法访问关键私有变量](https://cwe.mitre.org/data/definitions/767.html)|
 |[SWC-135](SWC-135/SWC-135.md)|没有效果的代码|[CWE-1164: 无关代码](https://cwe.mitre.org/data/definitions/1164.html)|
-|[SWC-134](SWC-134/SWC-134.md)|使用硬编码的gas数量进行消息调用|[CWE-655: 初始化不当](https://cwe.mitre.org/data/definitions/767.html)|
+|[SWC-134](SWC-134/SWC-134.md)|使用硬编码的Gas数量进行消息调用|[CWE-655: 初始化不当](https://cwe.mitre.org/data/definitions/767.html)|
 |[SWC-133](SWC-133/SWC-133.md)|多个可变长度参数的哈希碰撞|[CWE-294: 通过捕获重放绕过身份验证](https://cwe.mitre.org/data/definitions/294.html)|
 |[SWC-132](SWC-132/SWC-132.md)|意外的以太余额|[CWE-667：锁定不当](https://cwe.mitre.org/data/definitions/667.html)|
 |[SWC-131](SWC-131/SWC-131.md)|存在未使用的变量|[CWE-1164: 无关代码](https://cwe.mitre.org/data/definitions/1164.html)|
@@ -32,7 +32,7 @@
 |[SWC-116](SWC-116/SWC-116.md)|将区块值作为时间的代理|[CWE-829: 包含来自不受信任的控制领域的功能](https://cwe.mitre.org/data/definitions/829.html)|
 |[SWC-115](SWC-115/SWC-115.md)|通过tx.origin进行授权|[CWE-477: 使用已过时的函数](https://cwe.mitre.org/data/definitions/477.html)|
 |[SWC-114](SWC-114/SWC-114.md)|交易订单依赖性|[CWE-362: 使用不正确同步的共享资源并发执行（“竞争条件”）](https://cwe.mitre.org/data/definitions/362.html)|
-|[SWC-113](SWC-113/SWC-113.md)|失败调用导致的DoS攻击|[CWE-703: 异常情况检查或处理不当](https://cwe.mitre.org/data/definitions/703.html)|
+|[SWC-113](SWC-113/SWC-113.md)|失败调用导致的DoS攻击|[CWE-703: 异常条件的不正确检查或处理不当](https://cwe.mitre.org/data/definitions/703.html)|
 |[SWC-112](SWC-112/SWC-112.md)|将委托调用给不受信任的被调用方|[CWE-829: 包含来自不受信任的控制领域的功能](https://cwe.mitre.org/data/definitions/829.html)|
 |[SWC-111](SWC-111/SWC-111.md)|使用已弃用的Solidity函数|[CWE-477：使用过时的函数](https://cwe.mitre.org/data/definitions/477.html)|
 |[SWC-110](SWC-110/SWC-110.md)|断言违规|[CWE-670: 始终不正确的控制流实现](https://cwe.mitre.org/data/definitions/670.html)|

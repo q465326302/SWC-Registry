@@ -7,9 +7,9 @@ contract DeprecatedSimpleFixed {
         bytes32 bhash = blockhash(0);
         bytes32 hashofhash = keccak256(bhash);
 
-        uint gas = gasleft();
+        uint Gas = Gasleft();
 
-        if (gas == 0) {
+        if (Gas == 0) {
             revert();
         }
 
