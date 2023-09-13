@@ -24,7 +24,7 @@ contract DosNumber {
     // GasDOS清除
     function clearDOS() public {
 
-        // 数字取决于实际的燃气限制。
+        // 数字取决于实际的Gas限制。
         require(numElements>1500);
         array = new uint[](0);
         numElements = 0;
