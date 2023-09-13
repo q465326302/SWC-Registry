@@ -9,9 +9,9 @@ contract DeprecatedSimple {
         bytes32 blockhash = block.blockhash(0);
         bytes32 hashofhash = sha3(blockhash);
 
-        uint Gas = msg.Gas;
+        uint gas = msg.gas;
 
-        if (Gas == 0) {
+        if (gas == 0) {
             throw;
         }
 

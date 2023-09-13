@@ -25,10 +25,10 @@ contract HardcodedNotGood {
     }
 
      function callLowLevel() public {
-         _callable.call.value(0).Gas(10000)("");
+         _callable.call.value(0).gas(10000)("");
      }
 
      function callWithArgs() public {
-         callable.callMe{Gas: 10000}();
+         callable.callMe{gas: 10000}();
      }
 }

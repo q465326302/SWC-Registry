@@ -10,7 +10,7 @@ library SafeMath {
   * @计算两个数字的乘积，当结果溢出时会进行反转。
   */
   function mul(uint256 a, uint256 b) internal pure returns (uint256) {
-    // Gas优化：这比要求 'a' 不为零要便宜，但如果还要测试 'b'，则会失去这个好处。
+    // gas优化：这比要求 'a' 不为零要便宜，但如果还要测试 'b'，则会失去这个好处。
     // See: https://github.com/OpenZeppelin/openzeppelin-solidity/pull/522
     if (a == 0) {
       return 0;

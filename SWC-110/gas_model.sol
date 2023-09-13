@@ -4,12 +4,12 @@
  */
 pragma solidity ^0.4.21;
 
-contract GasModel{
+contract gasModel{
     uint x = 100;
     function check(){
-        uint a = Gasleft();
+        uint a = gasleft();
         x = x + 1;
-        uint b = Gasleft();
+        uint b = gasleft();
         assert(b > a);
     }
 }

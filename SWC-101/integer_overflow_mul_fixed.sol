@@ -13,7 +13,7 @@ contract IntegerOverflowMul {
 
     //来自SafeMath
     function mul(uint256 a, uint256 b) internal pure returns (uint256) {
-      // Gas优化：这比要求'a'不为零要便宜，但如果'b'也被测试，则会丧失这种好处。
+      // gas优化：这比要求'a'不为零要便宜，但如果'b'也被测试，则会丧失这种好处。
       // 参见：https://github.com/OpenZeppelin/openzeppelin-solidity/pull/522
       if (a == 0) {
         return 0;

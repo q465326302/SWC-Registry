@@ -15,7 +15,7 @@ library SafeMath {
     * @将两个数字相乘，如果溢出则返回反转。
     */
     function mul(uint256 a, uint256 b) internal pure returns (uint256) {
-        // Gas优化：这比要求'a'不为零更便宜，但如果'b'也被测试，这个好处就会丧失。
+        // gas优化：这比要求'a'不为零更便宜，但如果'b'也被测试，这个好处就会丧失。
         // See: https://github.com/OpenZeppelin/openzeppelin-solidity/pull/522
         if (a == 0) {
             return 0;

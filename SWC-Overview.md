@@ -11,15 +11,15 @@
 |---|---|---|
 |[SWC-136](SWC-136/SWC-136.md)|未加密的私有数据上链|[CWE-767: 通过公共方法访问关键私有变量](https://cwe.mitre.org/data/definitions/767.html)|
 |[SWC-135](SWC-135/SWC-135.md)|没有效果的代码|[CWE-1164: 无关代码](https://cwe.mitre.org/data/definitions/1164.html)|
-|[SWC-134](SWC-134/SWC-134.md)|使用硬编码的Gas数量进行消息调用|[CWE-655: 初始化不当](https://cwe.mitre.org/data/definitions/767.html)|
+|[SWC-134](SWC-134/SWC-134.md)|使用硬编码的gas数量进行消息调用|[CWE-655: 初始化不当](https://cwe.mitre.org/data/definitions/767.html)|
 |[SWC-133](SWC-133/SWC-133.md)|多个可变长度参数的哈希碰撞|[CWE-294: 通过捕获重放绕过身份验证](https://cwe.mitre.org/data/definitions/294.html)|
 |[SWC-132](SWC-132/SWC-132.md)|意外的以太余额|[CWE-667：锁定不当](https://cwe.mitre.org/data/definitions/667.html)|
 |[SWC-131](SWC-131/SWC-131.md)|存在未使用的变量|[CWE-1164: 无关代码](https://cwe.mitre.org/data/definitions/1164.html)|
 |[SWC-130](SWC-130/SWC-130.md)|从右到左覆盖控制字符（U+202E）|[CWE-451：用户界面 (UI) 错误表述关键信息](http://cwe.mitre.org/data/definitions/451.html)|
 |[SWC-129](SWC-129/SWC-129.md)|笔误|[CWE-480: 使用错误的运算符](https://cwe.mitre.org/data/definitions/480.html)|
-|[SWC-128](SWC-128/SWC-128.md)|利用区块的 Gas 限制来发动 DoS 攻击|[CWE-400: 不受控制的资源消耗](https://cwe.mitre.org/data/definitions/400.html)|
+|[SWC-128](SWC-128/SWC-128.md)|利用区块的 gas 限制来发动 DoS 攻击|[CWE-400: 不受控制的资源消耗](https://cwe.mitre.org/data/definitions/400.html)|
 |[SWC-127](SWC-127/SWC-127.md)|使用的函数类型变量任意跳转|[CWE-695：使用低级功能](https://cwe.mitre.org/data/definitions/695.html)|
-|[SWC-126](SWC-126/SWC-126.md)|不足的 Gas 欺诈|[CWE-691：控制流管理不足](https://cwe.mitre.org/data/definitions/691.html)|
+|[SWC-126](SWC-126/SWC-126.md)|不足的 gas 欺诈|[CWE-691：控制流管理不足](https://cwe.mitre.org/data/definitions/691.html)|
 |[SWC-125](SWC-125/SWC-125.md)|继承顺序不正确|[CWE-696：错误的行为顺序](https://cwe.mitre.org/data/definitions/696.html)|
 |[SWC-124](SWC-124/SWC-124.md)|写入任意存储位置|[CWE-123: 写入何处条件漏洞](https://cwe.mitre.org/data/definitions/123.html)|
 |[SWC-123](SWC-123/SWC-123.md)|违反要求|[CWE-573: 调用方未正确遵循规范](https://cwe.mitre.org/data/definitions/573.html)|

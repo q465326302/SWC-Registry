@@ -1,5 +1,5 @@
 /*
- * @来源: https://consensys.github.io/smart-contract-best-practices/known_attacks/#insufficient-Gas-griefing
+ * @来源: https://consensys.github.io/smart-contract-best-practices/known_attacks/#insufficient-gas-griefing
  * @作者: ConsenSys Diligence
  * 由Kaden Zipfel修改
  */
